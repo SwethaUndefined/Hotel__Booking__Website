@@ -7,22 +7,28 @@
   margin: 0 0 0 9%;
 }
 #hotel-list-cards-1 {
+  display: flex;
+  flex-direction: row;
   width: 80%;
-  background-color: rgb(132, 136, 139);
+  background-color: lightgrey;
   margin: 2%;
   grid-column-start: 1;
   grid-column-end: 2;
 }
 #hotel-list-cards-2 {
+  display: flex;
+  flex-direction: row;
   width: 80%;
-  background-color: rgb(132, 136, 139);
+  background-color: lightgrey;
   margin: 2%;
   grid-column-start: 2;
   grid-column-end: 3;
 }
 #hotel-list-cards-3 {
+  display: flex;
+  flex-direction: row;
   width: 80%;
-  background-color: rgb(132, 136, 139);
+  background-color: lightgrey;
   margin: 2%;
 }
 .list-content {
@@ -41,4 +47,7 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+figcaption{
+  padding-left: 4%;
 }

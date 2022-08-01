@@ -1,15 +1,48 @@
 #hotel-detail-image {
-    height: 500px;
-    width: 500px;
-    margin: 2% 4% 0 4%;
-  }
-  figcaption{
-    margin: 0 4% 1% 4%;    
-  }
-  #description{
-    margin: 1% 4% 2% 4%;
-  }
-  #detail-content {
-    margin-top: 60px;
-    margin-bottom: 80px;
-  }
+  max-height: 350px;
+  width: 500px;
+  margin: 0 4% 0 4%;
+}
+#Hotel-Details figcaption {
+  width: 35%;
+  border-left: 1px solid black ;
+}
+#description {
+  margin: 1% 4% 2% 4%;
+}
+#detail-content {
+  margin-top: 90px;
+  margin-bottom: 80px;
+}
+#Hotel-Details{
+  display: flex;
+  border: 1px solid black;
+  margin: 2%;
+}
+#Payment-Details{
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: space-around;
+  margin: 0 5%;
+  align-items: center;
+  height: 100%;
+}
+.customer-Info input{
+  width: 100%;
+}
+.customer-Info label{
+     width: 250px;
+ }
+.customer-Info{
+  display: flex;
+  flex-direction: row;
+}
+#book-now{
+   margin-left: 155px;
+   padding: 2%;
+}
+#Hotel-Image{
+  width: 65%;
+  text-align: center;
+  padding: 2% 0;
+}
