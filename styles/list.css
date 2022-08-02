@@ -36,11 +36,12 @@
   margin-bottom: 60px;
 }
 #map-view {
-  display: none;
+  display: block;
 }
 li {
   list-style: none;
   padding: 0 3%;
+  margin: 0 1%;
   font-weight: bold;
 }
 ul {
@@ -50,4 +51,16 @@ ul {
 }
 figcaption{
   padding-left: 4%;
+}
+.list-content li{
+  padding: 0 !important;
+}
+#hotel-list-cards-1:hover{
+  background-color: rosybrown;
+}
+#hotel-list-cards-2:hover{
+  background-color: rosybrown;
+}
+#hotel-list-cards-3:hover{
+  background-color: rosybrown;
 }

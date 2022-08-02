@@ -1,9 +1,11 @@
-
 <html>
     <head>
         <title>Index</title>
         <link rel="stylesheet" href="styles/common.css">
         <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     </head>
     <body>
      <div class="main-container"> <!--  main div --> 
@@ -18,7 +20,7 @@
             </div>
                <!-- login  -->
                <div id="marginspace">
-       <a href="login.html">Login</a>
+                <button class="btn btn-light" data-toggle="modal" data-target="#loginModel">Login</button>
                <!-- login  -->
             </div>
 
@@ -32,7 +34,7 @@
             
             <div class="search-bar">   <!-- search bar -->
                 <div id="search">
-                  <input type="text" placeholder="city">
+                  <input class="search-Input"  type="text" placeholder="City">
                 </div>
               </div>   <!-- search bar -->
   
@@ -69,7 +71,7 @@
               </div>  <!-- Hotel index -->
   
               <div id="view-more">   <!-- view more -->
-                  <a href="index.html">View more >></a>
+                <a href="index.html" class="btn btn-sm btn-secondary">View More</a>
               </div>  <!-- view more -->
   
           </div> <!--  content div -->
@@ -81,7 +83,7 @@
         <div class="footer">   <!--  footer div -->
 
             <div id="contact">   <!--  contact div -->
-                <a href="contact.html">Contact Us</a>
+                <button class="btn btn-info" data-toggle="modal" data-target="#contactModal">Contact Us</button>
             </div>   <!--  contact div -->
 
             <div id="copy-right">  <!--  copy rights div -->
@@ -94,7 +96,56 @@
                 <a href="https://www.twitter.com" target="_blank"><img id="social-media-images" src="assests/images/twitter.png" height="20px" width="22px"></a>
             </div>   <!--  social Media div -->
 
-        </div>  <!--  footer div --> 
+        </div>  <!--  footer div -->
+        <div class="modal fade" id="loginModel" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
+                  <button type="button" class="close" data-dismiss="modal">x</button>
+                </div>
+                <div class="modal-body" id="login-body">
+                  <div>
+                  <label for="user_name">Username:</label>
+                  <input id="user_name" type="text" placeholder="Enter username">
+                </div>
+                <div>
+                  <label for="user_password">Password:</label>
+                  <input id="user_password" type="text" placeholder="Password">
+                </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary m-auto">Login</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="modal fade" id="contactModal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Get in Touch</h5>
+                  <button type="button" class="close" data-dismiss="modal">x</button>
+                </div>
+                <div class="modal-body">
+                  <div>
+                    Thank you for reaching out!!!
+                    <br>
+                    Please enter your email and we will get back to you
+                  </div>
+                  <br>
+                  <div>
+                      Email: <input type="email" placeholder="Enter your email id" required>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
 
 <!----------------------------------------------------------------------------------------------------> 
     </div>   <!--  main div --> 
