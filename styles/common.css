@@ -68,6 +68,7 @@ body {
   background-color: #e0e0e0 !important;
   font-family: "Ubuntu";
 }
+
 #logo-image {
   width: 60px;
   height: 60px;
@@ -83,6 +84,7 @@ body {
   top: 0px;
   left: 0px;
   right: 0px;
+  z-index: 10;
 }
 .footer {
   background-color: rosybrown;
@@ -108,7 +110,7 @@ body {
   font-size: 10px;
 }
 a {
-  text-decoration: none;
+ text-decoration: none;
   color: black;
 }
 #login-body label{
@@ -118,4 +120,34 @@ a {
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
+
+} 
+.checked{
+  color: orange;
+}
+@media(max-width:576px){
+  .footer {
+    background-color: rosybrown;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 1% 1% 2%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+  #contact-us-btn{
+    font-size: 10px !important;
+  }
+  .header {
+    background-color: rosybrown;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 10;
+  }
 }

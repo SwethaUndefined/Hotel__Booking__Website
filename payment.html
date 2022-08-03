@@ -1,148 +1,150 @@
-<html>
-    <head>
-        <title>Payment</title>
-        <link rel="stylesheet" href="styles/common.css">
-        <link rel="stylesheet" href="styles/payment.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-    <div class="main-container">  <!--  main div -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Payment</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/payment.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="main-container">  <!--  main div -->
 <!----------------------------------------------------------------------------------------------------> 
 
 <header class="header">  <!--  header div -->
-    <nav id="nav-bar"> 
-            <div id="marginspace1">
-               <!-- logo  -->
-               <a href="index.html"> <img src="assests/images/logo.png" id="logo-image" alt="logo" height="200px" width="150px"></a>               <!-- logo  -->
-            </div>
-               <!-- login  -->
-               <div id="marginspace">
-                <button class="btn btn-light" data-toggle="modal" data-target="#loginModel">Login</button>
-               <!-- login  -->
-            </div>
+<nav id="nav-bar"> 
+        <div id="marginspace1">
+           <!-- logo  -->
+           <a href="index.html"> <img src="assests/images/logo.png" id="logo-image" alt="logo" height="200px" width="150px"></a>               <!-- logo  -->
+        </div>
+           <!-- login  -->
+           <div id="marginspace">
+            <button class="btn btn-light" data-toggle="modal" data-target="#loginModel">Login</button>
+           <!-- login  -->
+        </div>
 
-    </nav>   
+</nav>   
 </header>    <!--  header div -->
 
 <!----------------------------------------------------------------------------------------------------> 
 
 <div class="payment-content">  <!--  content div -->
 
-    <div id="hotel-payment">
+<div id="hotel-payment">
 
-        <div>
-           <img id="hotel-payment-images" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel">
-        </div>
-
-        <div id="Hotel-Info">
-                <h2>Radisson Blu Hotel</h2>
-                 #38 of 1,289 hotels in New Delhi
-                <br>
-                <br>
-                 National Highway 8, New Delhi 110017 India
-        </div>
+    <div>
+       <img id="hotel-payment-images" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel">
     </div>
 
+    <div id="Hotel-Info">
+            <h2>Radisson Blu Hotel</h2>
+             #38 of 1,289 hotels in New Delhi
+            <br>
+            <br>
+             National Highway 8, New Delhi 110017 India
+    </div>
+</div>
+
 <div id="Customer-Detail">
-        <div id="customer-details">
-                <b>Name:</b> John Doe
-                <br>
-                <br>
-                <b>Number of Adults:</b> 2 
-                <br>
-                <br>
-                <b>Check-in date:</b> 06:06:2020 
-                <br>
-                <br>
-                 <b>Check-out date:</b> 08:06:2020 
-       </div>
-
-        <div id="payment-details">
-                <b>Traffic Breakdown:</b> Rs. 1000 x 2 Adults x 5 Nights 
-                <br>
-                <br>
-                <b>Total Amount:</b> Rs. 10000 <br>
-        </div>
-
-         <div>
-              <a class="btn btn-success disabled" href="payment.html">Pay Now</a>
-         </div>
+    <div id="customer-details">
+            <b>Name:</b> John Doe
+            <br>
+            <br>
+            <b>Number of Adults:</b> 2 
+            <br>
+            <br>
+            <b>Check-in date:</b> 06:06:2020 
+            <br>
+            <br>
+             <b>Check-out date:</b> 08:06:2020 
    </div>
-        </div> <!--  content div -->
 
-   
+    <div id="payment-details">
+            <b>Traffic Breakdown:</b> Rs. 1000 x 2 Adults x 5 Nights 
+            <br>
+            <br>
+            <b>Total Amount:</b> Rs. 10000 <br>
+    </div>
+
+     <div id="pay-now">
+          <a class="btn btn-success disabled" href="payment.html">Pay Now</a>
+     </div>
+</div>
+    </div> <!--  content div -->
+
+
 <!----------------------------------------------------------------------------------------------------> 
 
 <div class="footer">   <!--  footer div -->
 
-    <div id="contact">   <!--  contact div -->
-        <button class="btn btn-info" data-toggle="modal" data-target="#contactModal">Contact Us</button>
-    </div>   <!--  contact div -->
+<div id="contact">   <!--  contact div -->
+    <button id="contact-us-btn" class="btn btn-info" data-toggle="modal" data-target="#contactModal">Contact Us</button>
+</div>   <!--  contact div -->
 
-    <div id="copy-right">  <!--  copy rights div -->
-        &copy; 2020 ROOM SEARCH PVT. LTD.
-    </div>  <!--  copy right div -->
+<div id="copy-right">  <!--  copy rights div -->
+    &copy; 2020 ROOM SEARCH PVT. LTD.
+</div>  <!--  copy right div -->
 
-    <div id="social-media">   <!--  social Media div -->
-        <a href="https://www.facebook.com" target="_blank"><img id="social-media-images" src="assests/images/facebook.png" height="20px" width="22px"></a>
-        <a href="https://www.instagram.com" target="_blank"><img id="social-media-images" src="assests/images/instagram.png" height="20px" width="22px"></a>
-        <a href="https://www.twitter.com" target="_blank"><img id="social-media-images" src="assests/images/twitter.png" height="20px" width="22px"></a>
-    </div>   <!--  social Media div -->
+<div id="social-media">   <!--  social Media div -->
+    <a href="https://www.facebook.com" target="_blank"><img id="social-media-images" src="assests/images/facebook.png" height="20px" width="22px"></a>
+    <a href="https://www.instagram.com" target="_blank"><img id="social-media-images" src="assests/images/instagram.png" height="20px" width="22px"></a>
+    <a href="https://www.twitter.com" target="_blank"><img id="social-media-images" src="assests/images/twitter.png" height="20px" width="22px"></a>
+</div>   <!--  social Media div -->
 
 </div>  <!--  footer div -->
 <div class="modal fade" id="loginModel" tabindex="-1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
-          <button type="button" class="close" data-dismiss="modal">x</button>
-        </div>
-        <div class="modal-body" id="login-body">
-          <div>
-          <label for="user_name">Username:</label>
-          <input id="user_name" type="text" placeholder="Enter username">
-        </div>
-        <div>
-          <label for="user_password">Password:</label>
-          <input id="user_password" type="text" placeholder="Password">
-        </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary m-auto">Login</button>
-        </div>
-      </div>
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
+      <button type="button" class="close" data-dismiss="modal">x</button>
+    </div>
+    <div class="modal-body" id="login-body">
+      <div>
+      <label for="user_name">Username:</label>
+      <input id="user_name" type="text" placeholder="Enter username">
+    </div>
+    <div>
+      <label for="user_password">Password:</label>
+      <input id="user_password" type="text" placeholder="Password">
+    </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-primary m-auto">Login</button>
     </div>
   </div>
+</div>
+</div>
 
 <div class="modal fade" id="contactModal" tabindex="-1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Get in Touch</h5>
-          <button type="button" class="close" data-dismiss="modal">x</button>
-        </div>
-        <div class="modal-body">
-          <div>
-            Thank you for reaching out!!!
-            <br>
-            Please enter your email and we will get back to you
-          </div>
-          <br>
-          <div>
-              Email: <input type="email" placeholder="Enter your email id" required>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Submit</button>
-        </div>
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Get in Touch</h5>
+      <button type="button" class="close" data-dismiss="modal">x</button>
+    </div>
+    <div class="modal-body">
+      <div>
+        Thank you for reaching out!!!
+        <br>
+        Please enter your email and we will get back to you
+      </div>
+      <br>
+      <div>
+          Email: <input type="email" placeholder="Enter your email id" required>
       </div>
     </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-primary">Submit</button>
+    </div>
   </div>
-
-
+</div>
+</div>
 <!----------------------------------------------------------------------------------------------------> 
 </div>   <!--  main div --> 
 </body>
-</html> 
+</html>

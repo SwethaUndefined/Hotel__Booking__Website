@@ -64,3 +64,24 @@ input:focus{
 #cards:hover #overlay{
      opacity: 1;
 }
+@media(max-width:576px){
+  #city-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  #cards{
+    padding: 4% 0;
+    width: auto;
+  }
+}
+@media(min-width:576px) and (max-width:768px) {
+  #city-cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 15px; 
+    justify-content: space-evenly;
+  } 
+}

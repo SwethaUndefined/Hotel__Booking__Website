@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
     <div class="main-container"> <!--  main div -->
@@ -45,32 +46,47 @@
 
            <div class="tab-panel fade show active" id="hotel-list">    <!-- Hotel list  -->
                   <a style="text-decoration: none; color: black;" href="detail.html">
-                   <div id="hotel-list-cards-1">
+                   <div id="hotel-list-cards">
                    <img id="Hotel-images" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel">
                 <figcaption>
                        <h3>Radisson blu Hotel</h3>
-                       <div>5 star</div>
-                       <br>
+                       <div>
+                        <span class="fa fa-star checked"> </span>
+                        <span class="fa fa-star checked"> </span>
+                        <span class="fa fa-star checked"> </span>
+                        <span class="fa fa-star checked"> </span>
+                        <span class="fa fa-star checked"> </span>
+                       </div>
                        <div>New Delhi</div>
                 </figcaption>
             </div></a> 
 
-            <div id="hotel-list-cards-2">
+            <div id="hotel-list-cards">
                   <img id="Hotel-images" src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="The Lalit New Delhi">
                   <figcaption>
                     <h3>The Lalit New Delhi</h3>
-                    <div>4.5 star</div>
-                    <br>
+                    <div>
+                      <span class="fa fa-star checked"> </span>
+                      <span class="fa fa-star checked"> </span>
+                      <span class="fa fa-star checked"> </span>
+                      <span class="fa fa-star checked"> </span>
+                      <span class="fa fa-star"> </span>
+                    </div>
                     <div>New Delhi</div>
                   </figcaption>
             </div>
 
-            <div id="hotel-list-cards-3">
+            <div id="hotel-list-cards">
                 <img id="Hotel-images" src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="Taj Palace">
                 <figcaption>
                   <h3>Taj Palace</h3>
-                  <div>4 star</div>
-                  <br>
+                  <div>
+                    <span class="fa fa-star checked"> </span>
+                    <span class="fa fa-star checked"> </span>
+                    <span class="fa fa-star checked"> </span>
+                    <span class="fa fa-star checked"> </span>
+                    <span class="fa fa-star"> </span>
+                  </div>
                   <div>New Delhi</div>
                  </figcaption>
             </div>
@@ -89,7 +105,7 @@
 <div class="footer">   <!--  footer div -->
 
   <div id="contact">   <!--  contact div -->
-      <button class="btn btn-info" data-toggle="modal" data-target="#contactModal">Contact Us</button>
+      <button id="contact-us-btn"  class="btn btn-info" data-toggle="modal" data-target="#contactModal">Contact Us</button>
   </div>   <!--  contact div -->
 
   <div id="copy-right">  <!--  copy rights div -->
