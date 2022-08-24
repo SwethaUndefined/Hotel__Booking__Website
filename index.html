@@ -12,175 +12,110 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     </head>
     <body>
-     <div class="main-container"> <!--  main div --> 
-<!----------------------------------------------------------------------------------------------------> 
+     <div class="main-container"> <!--  main div -->
+<!---------------------------------------------------------------------------------------------------->
 
-<header class="header">  <!--  header div -->
-    <nav id="nav-bar"> 
-            <div id="marginspace1">
-               <!-- logo  -->
-       <img src="assests/images/logo.png" id="logo-image" alt="logo" height="200px" width="150px">
-               <!-- logo  -->
-            </div>
-               <!-- login  -->
-               <div id="marginspace">
-                <button class="btn btn-light" data-toggle="modal" data-target="#loginModel">Login</button>
-               <!-- login  -->
-            </div>
+<header id="header">  <!--  header div -->
 
-    </nav>   
 </header>    <!--  header div -->
 
-<!----------------------------------------------------------------------------------------------------> 
+<!---------------------------------------------------------------------------------------------------->
 
         <div class="index-content"> <!--  content div -->
 
-            
+
             <div class="search-bar">   <!-- search bar -->
                 <div id="search">
                   <input class="search-Input"  type="text" placeholder="City">
                 </div>
               </div>   <!-- search bar -->
-  
-              <div id="city-cards">  <!--Hotel index-->  
+
+              <div id="city-cards1">  <!--Hotel index-->
               <div id="cards">
-                <div><a href="list.html"><img id="city-image1" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" height="300px" width="300"></a></div> 
+                <div><a href="list.html"><img id="city-image1" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" height="300px" width="300"></a></div>
                 <div id="overlay">
-                    <div id="text">Delhi</div> 
+                    <div id="text">Delhi</div>
                 </div>
               </div>
-  
+
               <div id="cards">
                 <div><img id="city-image2" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"  height="300px" width="300px"></div>
                 <div id="overlay">
                     <div id="text">Goa</div>
                 </div>
-              </div>   
-  
+              </div>
+
               <div id="cards">
                 <div><img id="city-image3" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"  height="300px" width="300px"></div>
                 <div id="overlay">
                     <div id="text">Hyderabad</div>
                 </div>
               </div>
-  
+
               <div id="cards">
               <div><img id="city-image4" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"  height="300px" width="300px"></div>
                   <div id="overlay">
                       <div id="text">Kolkata</div>
                   </div>
               </div>
-  
+
               </div>  <!-- Hotel index -->
-              <div id="city-cards">  <!--Hotel index-->  
-                <div id="cards">
-                  <div><img id="city-image1" src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg" height="300px" width="300"></a></div> 
+              <div id="city-cards2">  <!--Hotel index-->
+                  <div id="cards">
+                  <div><img id="city-image5" src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg" height="300px" width="300"></a></div>
                   <div id="overlay">
-                      <div id="text">Chennai</div> 
+                      <div id="text">Chennai</div>
                   </div>
                 </div>
-    
+
                 <div id="cards">
-                  <div><img id="city-image2" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/fc/agra.jpg"  height="300px" width="300px"></div>
+                  <div><img id="city-image6" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/fc/agra.jpg"  height="300px" width="300px"></div>
                   <div id="overlay">
                       <div id="text">Agra</div>
                   </div>
-                </div>   
-    
+                </div>
+
                 <div id="cards">
-                  <div><img id="city-image3" src="https://media-cdn.tripadvisor.com/media/photo-s/10/a3/3b/8a/screenshot-2017-09-12.jpg"  height="300px" width="300px"></div>
+                  <div><img id="city-image7" src="https://media-cdn.tripadvisor.com/media/photo-s/10/a3/3b/8a/screenshot-2017-09-12.jpg"  height="300px" width="300px"></div>
                   <div id="overlay">
                       <div id="text">Jaipur</div>
                   </div>
                 </div>
-    
+
                 <div id="cards">
-                <div><img id="city-image4" src="https://media-cdn.tripadvisor.com/media/photo-s/0c/d2/2f/7a/palace-from-the-outside.jpg"  height="300px" width="300px"></div>
+                <div><img id="city-image8" src="https://media-cdn.tripadvisor.com/media/photo-s/0c/d2/2f/7a/palace-from-the-outside.jpg"  height="300px" width="300px"></div>
                     <div id="overlay">
                         <div id="text">Bengaluru</div>
                     </div>
                 </div>
-    
+
                 </div> 
-  
-              <div id="view-more">   <!-- view more -->
-                <a href="index.html" class="btn btn-sm btn-secondary">View More</a>
+
+               <div id="view-more">   <!-- view more -->
+              <button class="btn btn-sm btn-secondary" id="viewMoreButton" onclick="showMoreOption()">View More</button>
+              <button class="btn btn-sm btn-secondary" style="display: none;" id="viewLessButton" onclick="showLessOption()">View Less</button>
               </div>  <!-- view more -->
-  
-          </div> <!--  content div -->
 
-            
+          </div>  <!--content div -->
 
-<!----------------------------------------------------------------------------------------------------> 
 
-        <div class="footer">   <!--  footer div -->
 
-            <div id="contact">   <!--  contact div -->
-                <button id="contact-us-btn" class="btn btn-info" data-toggle="modal" data-target="#contactModal">Contact Us</button>
-            </div>   <!--  contact div -->
+<!---------------------------------------------------------------------------------------------------->
 
-            <div id="copy-right">  <!--  copy rights div -->
-                &copy; 2020 ROOM SEARCH PVT. LTD.
-            </div>  <!--  copy right div -->
+        <div id="footer">   <!--  footer div -->
+ <!--  social Media div -->
+          </div>  <!--  footer div -->
 
-            <div id="social-media">   <!--  social Media div -->
-                <a href="https://www.facebook.com" target="_blank"><img id="social-media-images" src="assests/images/facebook.png" height="20px" width="22px"></a>
-                <a href="https://www.instagram.com" target="_blank"><img id="social-media-images" src="assests/images/instagram.png" height="20px" width="22px"></a>
-                <a href="https://www.twitter.com" target="_blank"><img id="social-media-images" src="assests/images/twitter.png" height="20px" width="22px"></a>
-            </div>   <!--  social Media div -->
-
-        </div>  <!--  footer div -->
+         <form>
         <div class="modal fade" id="loginModel" tabindex="-1">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
-                <button type="button" class="close" data-dismiss="modal">x</button>
-              </div>
-              <div class="modal-body" id="login-body">
-                <div>
-                <label for="user_name">Username:</label>
-                <input id="user_name" type="text" placeholder="Enter username">
-              </div>
-              <div>
-                <label for="user_password">Password:</label>
-                <input id="user_password" type="text" placeholder="Password">
-              </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary m-auto">Login</button>
-              </div>
-            </div>
-          </div>
         </div>
-
+      </form>
       <div class="modal fade" id="contactModal" tabindex="-1">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Get in Touch</h5>
-                <button type="button" class="close" data-dismiss="modal">x</button>
-              </div>
-              <div class="modal-body">
-                <div>
-                  Thank you for reaching out!!!
-                  <br>
-                  Please enter your email and we will get back to you
-                </div>
-                <br>
-                <div>
-                    Email: <input type="email" placeholder="Enter your email id" required>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Submit</button>
-              </div>
-            </div>
-          </div>
+
         </div>
-
-
-<!----------------------------------------------------------------------------------------------------> 
-    </div>   <!--  main div --> 
+<!---------------------------------------------------------------------------------------------------->
+    </div>   <!--  main div -->
+    <script src="scripts/common.js"></script>
+    <script src="scripts/index.js"></script>
     </body>
-</html> 
+</html>

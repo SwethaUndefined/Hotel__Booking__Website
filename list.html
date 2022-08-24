@@ -16,19 +16,8 @@
     <div class="main-container"> <!--  main div -->
 <!----------------------------------------------------------------------------------------------------> 
 
-<header class="header">  <!--  header div -->
-    <nav id="nav-bar"> 
-            <div id="marginspace1">
-               <!-- logo  -->
-               <a href="index.html"> <img src="assests/images/logo.png" id="logo-image" alt="logo" height="200px" width="150px"></a>               <!-- logo  -->
-            </div>
-               <!-- login  -->
-               <div id="marginspace">
-                <button class="btn btn-light" data-toggle="modal" data-target="#loginModel">Login</button>
-               <!-- login  -->
-            </div>
-
-    </nav>   
+<header id="header">  <!--  header div -->
+   
 </header>    <!--  header div -->
 
 <!----------------------------------------------------------------------------------------------------> 
@@ -102,74 +91,26 @@
 <!---------------------------------------------------------------------------------------------------->
 
 
-<div class="footer">   <!--  footer div -->
+<div id="footer">   <!--  footer div -->
 
-  <div id="contact">   <!--  contact div -->
-      <button id="contact-us-btn"  class="btn btn-info" data-toggle="modal" data-target="#contactModal">Contact Us</button>
-  </div>   <!--  contact div -->
-
-  <div id="copy-right">  <!--  copy rights div -->
-      &copy; 2020 ROOM SEARCH PVT. LTD.
-  </div>  <!--  copy right div -->
-
-  <div id="social-media">   <!--  social Media div -->
-      <a href="https://www.facebook.com" target="_blank"><img id="social-media-images" src="assests/images/facebook.png" height="20px" width="22px"></a>
-      <a href="https://www.instagram.com" target="_blank"><img id="social-media-images" src="assests/images/instagram.png" height="20px" width="22px"></a>
-      <a href="https://www.twitter.com" target="_blank"><img id="social-media-images" src="assests/images/twitter.png" height="20px" width="22px"></a>
-  </div>   <!--  social Media div -->
+   <!--  social Media div -->
 
 </div>  <!--  footer div -->
+<form>
+
 <div class="modal fade" id="loginModel" tabindex="-1">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
-        <button type="button" class="close" data-dismiss="modal">x</button>
-      </div>
-      <div class="modal-body" id="login-body">
-        <div>
-        <label for="user_name">Username:</label>
-        <input id="user_name" type="text" placeholder="Enter username">
-      </div>
-      <div>
-        <label for="user_password">Password:</label>
-        <input id="user_password" type="text" placeholder="Password">
-      </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary m-auto">Login</button>
-      </div>
-    </div>
-  </div>
+  
 </div>
+</form>
 
 <div class="modal fade" id="contactModal" tabindex="-1">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Get in Touch</h5>
-        <button type="button" class="close" data-dismiss="modal">x</button>
-      </div>
-      <div class="modal-body">
-        <div>
-          Thank you for reaching out!!!
-          <br>
-          Please enter your email and we will get back to you
-        </div>
-        <br>
-        <div>
-            Email: <input type="email" placeholder="Enter your email id" required>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Submit</button>
-      </div>
-    </div>
-  </div>
+  
 </div>
 
 
 <!----------------------------------------------------------------------------------------------------> 
-</div>   <!--  main div --> 
+</div>   <!--  main div -->
+<script src="scripts/common.js"></script>
+    <script src="scripts/list.js"></script> 
 </body>
 </html> 
