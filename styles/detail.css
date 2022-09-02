@@ -51,6 +51,9 @@
    background: none;
    border: none;
 }
+#star{
+  color: gold;
+}
 .carousel{
   width: 500px;
   margin: auto;
