@@ -151,3 +151,36 @@ a {
     z-index: 10;
   }
 }
+.loader {
+  display: none; 
+  position: fixed;
+  top: 43%;
+  left: 48%;
+  border: 10px solid #EAF0F6;
+  border-radius: 50%;
+  border-top: 10px solid;
+  width: 75px;
+  height: 75px;
+  animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+  0% { transform: rotate(0deg); 
+  }
+  100% { transform: rotate(360deg); 
+  }
+}
+@media(max-width:578px){
+  .loader {
+     display: none; 
+    position: fixed;
+    top: 45%;
+    left: 45%;
+    border: 5px solid #EAF0F6;
+    border-radius: 50%;
+    border-top: 5px solid;
+    width: 50px;
+    height: 50px;
+    animation: spinner 1s linear infinite;
+  }
+}

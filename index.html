@@ -26,7 +26,9 @@
 
             <div class="search-bar">   <!-- search bar -->
                 <div id="search">
-                  <input class="search-Input"  type="text" placeholder="City">
+                  <input id="searchCity" class="search-Input"  type="text" placeholder="City" oninput="handleSearch(event)">
+                  <div class="searchItem" id="searchItem">
+                  </div>
                 </div>
               </div>   <!-- search bar -->
 

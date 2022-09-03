@@ -16,6 +16,7 @@
 .list-content {
   margin-top: 70px;
   margin-bottom: 60px;
+  overflow: auto;
 }
 #map-view {
   display: block;

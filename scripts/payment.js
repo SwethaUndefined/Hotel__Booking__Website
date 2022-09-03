@@ -1,3 +1,4 @@
+document.getElementById("loader").style.display="block";
 var Id = window.location.href.split("=")[2];
 
 function paymentStatus() {
@@ -35,6 +36,7 @@ document.getElementById("breakDown").innerHTML =
              ${response.address}
     </div>`;
     document.getElementById("hotel-payment").innerHTML = paymentPage;
+    document.getElementById("loader").style.display="none";
   }
 }
 

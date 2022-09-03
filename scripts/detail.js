@@ -26,6 +26,7 @@ function onChangeFromDate(){
 }
 
 (function apiCall(){
+  document.getElementById("loader").style.display="block";
 
   const xhr = new XMLHttpRequest();
   
@@ -84,6 +85,7 @@ function onChangeFromDate(){
         Info = Info + "<li>" + parseResponse.amenities[i].name + "</li>";
       }
       document.getElementById("amenities").innerHTML = Info;
+      document.getElementById("loader").style.display="none";
     }
   }
   

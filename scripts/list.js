@@ -1,9 +1,10 @@
 var cityName = window.location.href.split("=")[1];
 
 (function apiCall(){
+  document.getElementById("loader").style.display="block";
 
     const xhr = new XMLHttpRequest();
-    
+
     xhr.onreadystatechange= ()=>{
       if(xhr.readyState==4 && xhr.status==200){
         var response = xhr.responseText;
@@ -25,13 +26,14 @@ var cityName = window.location.href.split("=")[1];
      </div></a> `
         }
         document.getElementById("hotel-list").innerHTML=cards;
+        document.getElementById("loader").style.display="none";
       }
     }
-    
+
     xhr.open("GET", `https://travel-advisor.p.rapidapi.com/locations/search?query=${cityName}&limit=30&offset=0&units=km&location_id=1&currency=USD&sort=relevance&lang=en_US`);
     xhr.setRequestHeader("X-RapidAPI-Key", "86a8adac7cmshbdc3f1ea8b8506bp19d5fajsn2316bc2b9626");
     xhr.setRequestHeader("X-RapidAPI-Host", "travel-advisor.p.rapidapi.com");
-    
+
     xhr.send();
     })();
 

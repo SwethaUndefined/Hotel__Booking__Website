@@ -68,6 +68,27 @@ input:focus{
 #cards:hover #overlay{
      opacity: 1;
 }
+#search{
+  width: 400px;
+  position: relative;
+}
+.searchItem{
+  background-color: #f1f1f1;
+  font-size: 16px;
+  border-radius: 12px;
+  position: absolute;
+  width: 100%;
+  max-height: 150px;
+  overflow: auto;
+}
+.suggestion{
+  border-bottom: 1px solid #e0e0e0;
+  padding: 5px 10px;
+  margin: 0;
+}
+.suggestion:hover{
+  background-color: #e0e0e0;
+}
 @media(max-width:576px){
   #city-cards1,#city-cards2 {
     display: flex;
@@ -79,6 +100,9 @@ input:focus{
   #cards{
     padding: 4% 0;
     width: auto;
+  }
+  #search{
+    width: 200px;
   }
 }
 @media(min-width:576px) and (max-width:768px) {

@@ -23,7 +23,7 @@ containerHeader();
 </div>   <!--  contact div -->
 
 <div id="copy-right">  <!--  copy rights div -->
- &copy; 2020 ROOM SEARCH PVT. LTD.
+ &copy; 2022 ROOM SEARCH PVT. LTD.
 </div>  <!--  copy right div -->
 
 <div id="social-media">   <!--  social Media div -->
